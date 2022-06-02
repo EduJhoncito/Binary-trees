@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "ingenieria.c"
-#include "diseño.c"
+#include "diseno.c"
 #include "edicion.c"
 
 int main()//
@@ -15,27 +15,24 @@ int main()//
 
     if (raizIngenieria == NULL)//aqui comprobamos si la raiz es nula
     {
-        raizIngenieria = nuevoNodoIngenieria(" Desarrollador backend-Google\n");//si es asi pues le agregamos la cadena LUIS
+        raizIngenieria = nuevoNodoIngenieria(" Frontend engineer-FileCloud\n");//si es asi pues le agregamos la cadena LUIS
     }
     // Agregar varias cadenas
-    agregar(raizIngenieria, " Desarrollador backend-Amazon\n");
-    agregar(raizIngenieria, " Desarrollador fullstack-Tesla\n");
-    agregar(raizIngenieria, " Desarrollador frontend-Rappi\n");
-    agregar(raizIngenieria, " Ingeniero de software-Mercado Libre\n");
-    agregar(raizIngenieria, " Ingeniero de software senior-BCP\n");
-    agregar(raizIngenieria, " Desarrollador backend-Mercado Libre\n");
+    agregar(raizIngenieria, " Backend engineer-Archetype connect, Inc\n");
+    agregar(raizIngenieria, " Java backend developer-Teknospar\n");
+    agregar(raizIngenieria, " Frontend developer/Angular.js-Talent500\n");
+    agregar(raizIngenieria, " Software test analyst-JMA solutions\n");
+    agregar(raizIngenieria, " Software development engineer in test-DataPattern\n");
 
     if (raizDiseno == NULL)//aqui comprobamos si la raiz es nula
     {
-        raizDiseno = nuevoNodoDiseno(" Diseñador UI-Amazon\n");//si es asi pues le agregamos la cadena LUIS
+        raizDiseno = nuevoNodoDiseno(" Disenador UX-CSTI\n");//si es asi pues le agregamos la cadena LUIS
     }
     // Agregar varias cadenas
-    agregarDiseno(raizDiseno, " Diseñador UI-Spotify\n");
-    agregarDiseno(raizDiseno, " Diseñador UX-Spotify\n");
-    agregarDiseno(raizDiseno, " Diseñador UX-Rappi\n");
-    agregarDiseno(raizDiseno, " Diseñador UX-Google\n");
-    agregarDiseno(raizDiseno, " Diseñador UX-Amazon\n");
-
+    agregarDiseno(raizDiseno, " Disenador UX-Alwa\n");
+    agregarDiseno(raizDiseno, " Disenador UX&UI-Fidanto\n");
+    agregarDiseno(raizDiseno, " Disenador UX&UI-G&S\n");
+    agregarDiseno(raizDiseno, " Disenador UX&UI-Summit\n");
 
     if (raizEdicion == NULL)//aqui comprobamos si la raiz es nula
     {
@@ -48,10 +45,10 @@ int main()//
     agregarEdicion(raizEdicion, " Editor de videos-Luisito Comunica\n");
 
 
-    printf("\nIngeniería de software [1] \n");
-    printf("\nDiseñador interactivo [2]\n");
+    printf("\nIngenieria de software [1] \n");
+    printf("\nDisenador interactivo [2]\n");
     printf("\nEditor de contenido [3]\n");
-    printf("\nIngrese la opción de tipo de trabajo que desea solicitar: ");
+    printf("\nIngrese la opcion de tipo de trabajo que desea solicitar: ");
     scanf("%d", &trabajo);
 
     switch (trabajo){
